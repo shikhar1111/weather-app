@@ -1,6 +1,6 @@
 const request=require('request');
-var geocodeAddress=(address,callback)=>{
-  var apiKey='ce48c48752b4a98bb4f7ce86b749954d';
+var geocodeAddress=((address,callback)=>{
+  var apiKey='4385ac591d5d559bb83d54f040417abd';
   request({
 url:`http://api.openweathermap.org/data/2.5/weather?q=${address}&units=metric&appid=${apiKey}`,
       json:true
@@ -15,6 +15,6 @@ url:`http://api.openweathermap.org/data/2.5/weather?q=${address}&units=metric&ap
     }
   });
 
-};
+});
 module.exports.geocodeAddress=geocodeAddress;
 //c8b1151ff103529500510566daacacbd

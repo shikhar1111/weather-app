@@ -5,7 +5,7 @@ const argv=yargs
 .options({
 a:{
   demand:true,
-  aliad:'address',
+  alias:'address',
   describe:'address to fetch weather for',
   string:true
 }
@@ -17,7 +17,7 @@ geocode.geocodeAddress(argv.address,(errorMessage,results)=>{
   if(errorMessage){
   console.log(errorMessage);
 } else{
-  console.log(JSON.stringify(results,undefined,2));
+  console.log(`The Temperature of ${results.city} is ${results.Temperature}°C`);
 }
 });
 // weather.getWeather(20.5937,78.9629,(errorMessage,weatherResults)=>{

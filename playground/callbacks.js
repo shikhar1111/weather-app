@@ -4,7 +4,7 @@ var getuser =(id,callback)=>{
     name:'Vikram'
   };
   setTimeout(()=>{
-  callbacks(user);
+  callback(user);
 },3000);
 
 };
