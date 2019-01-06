@@ -17,7 +17,7 @@ geocode.geocodeAddress(argv.address,(errorMessage,results)=>{
   if(errorMessage){
   console.log(errorMessage);
 } else{
-  console.log(`The Temperature of ${results.city} is ${results.Temperature}°C`);
+  console.log(`The Temperature of ${results.city} is ${results.Temperature}°C with minimum being ${results.Temperature_min} and maximum being ${results.Temperature_max} and visibility is ${results.visi} km`);
 }
 });
 // weather.getWeather(20.5937,78.9629,(errorMessage,weatherResults)=>{

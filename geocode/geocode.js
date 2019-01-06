@@ -10,7 +10,10 @@ url:`http://api.openweathermap.org/data/2.5/weather?q=${address}&units=metric&ap
     } else{
       callback(undefined,{
         Temperature: body.main.temp,
-        city: body.name
+        city: body.name,
+        Temperature_min: body.main.temp_min,
+        Temperature_max: body.main.temp_max,
+        visi: (body.visibility)/1000
       });
     }
   });
